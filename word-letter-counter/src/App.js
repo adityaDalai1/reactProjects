@@ -1,19 +1,19 @@
 // App.js 
 import React from "react"; 
-import WordLetterCounte from "./WordLetterCounter"; 
+import WordLetterCounter from "./WordLetterCounter"; 
 // import "./App.css"; 
 
 function App() { 
 	return ( 
 		<div className="App"> 
 			<h1 id="top"> 
-			GeeksforGeeks 
+			Let's do 
 			</h1> 
 			<h1> 
 			Words and Letters 
 			Counter 
 			</h1> 
-			<WordLetterCounte /> 
+			<WordLetterCounter /> 
 		</div> 
 	); 
 } 
