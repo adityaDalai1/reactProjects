@@ -8,8 +8,8 @@ const App = () => {
 	const validate = (value) => { 
 
 		if (validator.isStrongPassword(value, { 
-			minLength: 8, minLowercase: 1, 
-			minUppercase: 1, minNumbers: 1, minSymbols: 1 
+			minLength: 10, minLowercase: 3, 
+			minUppercase: 2, minNumbers: 3, minSymbols: 2
 		})) { 
 			setErrorMessage('Is Strong Password') 
 		} else { 
@@ -19,16 +19,16 @@ const App = () => {
 
 	return ( 
 		<div style={{ 
-			marginLeft: '200px', 
+			marginLeft: '150px', 
 		}}> 
 			<pre> 
-				<h2>Checking Password Strength in ReactJS</h2> 
+				<h1>Checking Password</h1> 
 				<span>Enter Password: </span><input type="text"
 					onChange={(e) => validate(e.target.value)}></input> <br /> 
 				{errorMessage === '' ? null : 
 					<span style={{ 
 						fontWeight: 'bold', 
-						color: 'red', 
+						color: 'blue', 
 					}}>{errorMessage}</span>} 
 			</pre> 
 		</div> 
